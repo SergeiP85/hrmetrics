@@ -1,0 +1,71 @@
+/* Основные стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Заголовки таблицы */
+th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Стили для строк с данными */
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Цветовые стили для ячеек с разными приоритетами */
+.green-cell {
+    background-color: #A5D6A7;
+    color: #2C6E49;
+}
+
+.blue-cell {
+    background-color: #81D4FA;
+    color: #01579B;
+}
+
+.orange-cell {
+    background-color: #FFCC80;
+    color: #F57C00;
+}
+
+/* Стили для строк с приоритетами */
+td[colspan="9"] {
+    background-color: #E0F7FA;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0288D1;
+}
+
+/* Плавные переходы для изменения фона ячеек */
+td:hover, th:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Стили для строк с приоритетами (Высокий, Средний, Низкий) */
+b {
+    font-size: 1.3em;
+}
+
+/* Стили для строк с пустыми ячейками */
+td:empty {
+    background-color: #f9f9f9;
+}
+
+/* Стили для таблицы с альтернативными цветами строк */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
